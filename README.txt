@@ -1,1 +1,2 @@
-Welcome to my personal portfolio website
+Welcome to my personal portfolio website.
+-Simon Flohr
