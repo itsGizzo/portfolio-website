@@ -1,0 +1,45 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonts */
+@font-face {
+    font-family: MonoLisa;
+    src: url('/resources/fonts/mono-lisa/MonoLisa-Regular.otf');
+}
+
+@font-face {
+    font-family: MonoLisa;
+    font-weight: bold;
+    src: url('/resources/fonts/mono-lisa/MonoLisa-Bold.otf');
+}
+
+/* COLOR PALETTE
+
+Global BG #0A0A0A
+Header/Footer BG #030303
+Banner BG #1e1e1e
+
+Primary #EBA945
+shade #a57630
+tint #f1c37d
+
+Secondary #FF796B
+shade #b3554b
+tint #ffa197
+
+Third #9D66FF
+shade #6e47b3
+tint #ba94ff
+
+*/
+
+/* Global Styles */
+html {
+    font-family: MonoLisa, monospace;
+    font-size: 16px;
+    color: #FFFFFF;
+}
