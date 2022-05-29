@@ -19,19 +19,25 @@
 
 /* COLOR PALETTE
 
-Global BG #0A0A0A
+NEUTRAL COLORS:
+Global BG #0a0a0a
 Header/Footer BG #030303
 Banner BG #1e1e1e
 
-Primary #EBA945
+MAIN COLORS:
+
+YELLOW
+Primary #eba945
 shade #a57630
 tint #f1c37d
 
-Secondary #FF796B
+RED
+Secondary #ff796b
 shade #b3554b
 tint #ffa197
 
-Third #9D66FF
+PURPLE
+Third #9d66ff
 shade #6e47b3
 tint #ba94ff
 
@@ -41,5 +47,19 @@ tint #ba94ff
 html {
     font-family: MonoLisa, monospace;
     font-size: 16px;
-    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    color: #ffffff;
+    background-color: #0a0a0a;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Typography */
+h1 {
+    font-weight: normal;
+    font-size: 20px;
 }
