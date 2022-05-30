@@ -1,0 +1,38 @@
+.projects {
+    grid-area: 3 / 2 / span 1 / span 1;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template: 124px repeat(5, 1fr) 124px / repeat(12, 1fr);
+    width: 100%;
+    max-width: 1366px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.projects-grid #projects-header {
+    grid-area: 2 / 1 / span 1 / span 12;
+}
+
+.projects-flexbox {
+    grid-area: 3 / 1 / span 4 / span 12;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.flex-project {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: darkgrey;
+    height: 100%;
+    width: 400px;
+    margin: 20px;
+    border: 2px solid #eba945;
+}
+
+.project-1 {
+    background-image: linear-gradient(#00000099, #00000099), url(/resources/images/simon-headshot.jpg);
+    background-size: cover;
+}

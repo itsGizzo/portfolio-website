@@ -20,7 +20,7 @@
 /* COLOR PALETTE
 
 NEUTRAL COLORS:
-Global BG #0a0a0a
+Global BG #090909
 Header/Footer BG #030303
 Banner BG #1e1e1e
 
@@ -50,7 +50,8 @@ html {
     font-style: normal;
     font-weight: 400;
     color: #ffffff;
-    background-color: #0a0a0a;
+    background-color: #090909;
+    height: 2000px;
 }
 
 a {
@@ -62,4 +63,65 @@ a {
 h1 {
     font-weight: normal;
     font-size: 20px;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 28px;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+p {
+    line-height: 50px;
+}
+
+p.indent {
+    text-indent: 50px;
+}
+
+hr {
+    margin-bottom: 40px;
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    position: relative;
+    top: 60px;
+    width: 100%;
+    grid-template-columns: 5% 1fr 5%;
+    grid-template-rows: 1000px 124px 1fr;
+}
+
+.technologies-bg {
+    grid-area: 2 / 1 / span 1 / span 3;
+    background-color: #1e1e1e;
+}
+
+/* Button */
+.button {
+    display: inline-block;
+    height: 60px;
+    min-height: 60px;
+}
+
+.button a {
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    height: 100%;
+}
+
+.button span {
+    font-size: 20px;
+    text-shadow: 2px 2px 16px rgba(0, 0, 0, 0.5);
+}
+
+.view-projects {
+    width: 100%;
+    position: relative;
+    background-color: #9d66ff;
+    margin-top: 20px;
 }

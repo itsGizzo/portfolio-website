@@ -1,0 +1,105 @@
+/* Section: About me */
+
+/* Main Grid */
+.about-me {
+    grid-area: 1 / 2 / span 1 /span 1;
+    background-image: url(/resources/images/header-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 120%;
+    width: 100%;
+}
+
+.technologies {
+    grid-area: 2 / 2 / span 1 / span 1;
+}
+
+/* Nested Grid */
+.about-me-grid {
+    display: grid;
+    grid-template: 22% repeat(4, 1fr) 22% / repeat(14, 1fr);
+    width: 100%;
+    max-width: 1366px;
+    height: 100%;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+
+.sidebar {
+    grid-area: 2 / 1 / span 4 / span 3;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    min-width: 190px;
+}
+
+.sidebar #headshot {
+    border: 2px solid #9d66ff;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.sidebar article p {
+    line-height: normal;
+}
+
+.main-text-box {
+    grid-area: 2 / 7 / span 4 / span 8;
+    display: flex;
+    
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    min-width: 570px;
+    /* border: 1px solid red; */
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.sidebar hr {
+    margin-bottom: 25px;
+}
+
+.social-links img {
+    width: 35px;
+    opacity: 30%;
+}
+
+.social-links a {
+    margin-right: 15px;
+}
+
+/* Technologies Content */
+.technologies-flex {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.technologies p {
+    letter-spacing: 10px;
+    font-size: 20px;
+    opacity: 35%;
+}
+
+.technologies ul {
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+}
+
+.technologies img {
+    width: 50px;
+    opacity: 50%;
+    margin: 0 15px;
+    position: relative;
+    line-height: 40px;
+}
