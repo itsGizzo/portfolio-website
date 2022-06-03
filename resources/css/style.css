@@ -51,7 +51,6 @@ html {
     font-weight: 400;
     color: #ffffff;
     background-color: #090909;
-    height: 2000px;
 }
 
 a {
@@ -91,7 +90,7 @@ hr {
     top: 60px;
     width: 100%;
     grid-template-columns: 5% 1fr 5%;
-    grid-template-rows: 1000px 124px 1fr;
+    grid-template-rows: 1000px 124px 1fr 200px;
 }
 
 .technologies-bg {

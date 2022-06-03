@@ -35,7 +35,9 @@
 }
 
 .sidebar #headshot {
-    border: 2px solid #9d66ff;
+    border-width: 5px;
+    border-style: solid;
+    border-image: linear-gradient(to top left,#eba945, #9d66ff) 1;
     width: 100%;
     margin-bottom: 20px;
 }
