@@ -5,12 +5,16 @@
 
         <title>Simon Flohr's Portfolio</title>
 
-        <!-- CSS and JS imports -->
+        <!-- CSS imports -->
         <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
         <link href="./resources/css/header.css" type="text/css" rel="stylesheet">
         <link href="./resources/css/about-me.css" type="text/css" rel="stylesheet">
         <link href="./resources/css/projects.css" type="text/css" rel="stylesheet">
-        <script src="./resources/js/app.js" type="text/javascript"></script>
+        <link href="./resources/css/footer.css" type="text/css" rel="stylesheet">
+
+        <!-- Media Queries -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="./resources/css/mediaqueries.css" type="text/css" rel="stylesheet">
 
     </head>
     <body>
@@ -20,6 +24,7 @@
                     <div id="yellow-block"></div>
                     <div id="red-block"></div>
                     <div id="purple-block"></div>
+                    <!-- <div id="empty-block"></div> -->
                 </div>
                 <div class="logo-2">
                     <h1>SIMON FLOHR</h1>
@@ -32,20 +37,35 @@
                     <li id="purple"><a href="#">contact</a></li>
                 </ul>
             </nav>
+            <div class="dropdown-menu" id="dropdown-menu" unselectable="on" onclick="initiateDd()">
+                <img src="./resources/images/icons/dropdown-icon.png" id="stripes">
+                <img src="./resources/images/icons/cross.png" id="cross">
+            </div>
+            <div class="dd-menu" id="dd-menu">
+                <ul>
+                    <li><a href="#">portfolio</a></li>
+                    <li><a href="#">resume</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </div>
         </header>
         <main class="grid-container">
             <section class="about-me">
                 <div class="about-me-grid">
                     <div class="sidebar">
                         <article>
-                            <img src="./resources/images/simon-headshot.jpg" id="headshot">
+                            <img src="./resources/images/simon-headshot.jpg" id="headshot" onContextMenu="return false;" draggable="false">
                             <p><strong>SIMON FLOHR</strong><br>
                             <i>Software Engineer</i></p><br>
                             <hr>
                             <div class="social-links">
-                                <a href="#"><img src="./resources/images/icons/github.png"></a>
-                                <a href="#"><img src="./resources/images/icons/linkedin.png"></a>
-                                <a href="#"><img src="./resources/images/icons/email.png"></a>
+                                <a href="https://github.com/itsGizzo" target="_blank"><img src="./resources/images/icons/github.png"></a>
+                                <a href="https://www.linkedin.com/in/simonflohr/" target="_blank"><img src="./resources/images/icons/linkedin.png"></a>
+                                <img src="./resources/images/icons/email.png" id="email-bttn">
+                            </div>
+                            <div class="triangle" id="triangle"></div>
+                            <div class="email-address" id="textbox">
+                                <p>simonflohr11@gmail.com</p>
                             </div>
                         </article>
                     </div>
@@ -55,49 +75,128 @@
                             <hr>
                             <p class="indent">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati repellendus odit ad esse praesentium quos excepturi expedita molestiae voluptates quas veritatis, facere beatae facilis atque voluptate accusantium odio deleniti possimus autem est repellat, dolores officiis. Dolorem, dolore doloremque. Quod earum officia maiores sapiente perferendis temporibus quis reiciendis vel porro minima?</p>
                             <div class="button view-projects">
-                                <a href="#"><span>VIEW PROJECTS</span></a>
+                                <a href="#projects"><span>VIEW PROJECTS</span></a>
                             </div>
                         </article>
                     </div>
                 </div>
             </section>
-            <div class="technologies-bg"></div>
+            <div class="grey-bg tech-bg"></div>
             <section class="technologies">
                 <div class="technologies-flex">
                     <p>technologies:</p>
                     <ul>
-                        <li><img src="./resources/images/icons/html.png"></li>
-                        <li><img src="./resources/images/icons/css.png"></li>
-                        <li><img src="./resources/images/icons/javascript.png"></li>
-                        <li><img src="./resources/images/icons/react.png"></li>
-                        <li><img src="./resources/images/icons/wordpress.png"></li>
-                        <li><img src="./resources/images/icons/git.png"></li>
-                        <li><img src="./resources/images/icons/github.png"></li>
-                        <li><img src="./resources/images/icons/sql.png"></li>
-                        <li><img src="./resources/images/icons/csharp.png"></li>
-                        <li><img src="./resources/images/icons/dotnet.png"></li>
-                        <li><img src="./resources/images/icons/photoshop.png"></li>
-                        <li><img src="./resources/images/icons/illustrator.png"></li>
-                        <li><img src="./resources/images/icons/figma.png"></li>
+                        <li><img src="./resources/images/icons/html.png" onContextMenu="return false;" draggable="false"></li>
+                        <li><img src="./resources/images/icons/css.png" onContextMenu="return false;" draggable="false"></li>
+                        <li><img src="./resources/images/icons/javascript.png" onContextMenu="return false;" draggable="false"></li>
+                        <li><img src="./resources/images/icons/react.png" onContextMenu="return false;" draggable="false"></li>
+                        <li><img src="./resources/images/icons/wordpress.png" onContextMenu="return false;" draggable="false"></li>
+                        <li><img src="./resources/images/icons/git.png" onContextMenu="return false;" draggable="false"></li>
+                        <li><img src="./resources/images/icons/github.png" onContextMenu="return false;" draggable="false"></li>
+                        <li><img src="./resources/images/icons/sql.png" onContextMenu="return false;" draggable="false"></li>
+                        <li><img src="./resources/images/icons/csharp.png" onContextMenu="return false;" draggable="false"></li>
+                        <li><img src="./resources/images/icons/dotnet.png" onContextMenu="return false;" draggable="false"></li>
+                        <li><img src="./resources/images/icons/photoshop.png" onContextMenu="return false;" draggable="false"></li>
+                        <li><img src="./resources/images/icons/illustrator.png" onContextMenu="return false;" draggable="false"></li>
+                        <li><img src="./resources/images/icons/figma.png" onContextMenu="return false;" draggable="false"></li>
                     </ul>
                 </div>
             </section>
-            <section class="projects">
+            <section class="projects" id="projects">
                 <div class="projects-grid">
-                    <div id="projects-header"><h2>Featured Projects</h2></div>
+                    <div id="projects-header"><h2>Featured Projects</h2><hr></div>
                     <div class="projects-flexbox">
                         <div class="flex-project project-1">
-
+                            <h3>AALIYAH'S MODELING WEBSITE</h3>
+                            <div>
+                                <!-- <hr style="margin: 10px 0;"> -->
+                                <strong>DESCRIPTION</strong>
+                                <hr style="margin: 10px 0;">
+                                <p class="p-projects">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati repellendus odit ad esse praesentium quos amet consectetur.
+                                </p>
+                            </div>
+                            <div>
+                                <!-- <hr style="margin: 10px 0;"> -->
+                                <strong>TECHNOLOGIES</strong>
+                                <hr style="margin: 10px 0;">
+                                <p class="p-projects">
+                                    HTML | CSS | node.js | react.js | AWS | MySQL
+                                </p>
+                            </div>
+                            <div class="button projects-button">
+                                <a href="#"><span>EXPAND</span></a>
+                            </div>
                         </div>
                         <div class="flex-project project-2">
-                            
+                            <h3>GIZZO</h3>
+                            <div>
+                                <!-- <hr style="margin: 10px 0;"> -->
+                                <strong>DESCRIPTION</strong>
+                                <hr style="margin: 10px 0;">
+                                <p class="p-projects">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati repellendus odit ad esse praesentium quos amet consectetur.
+                                </p>
+                            </div>
+                            <div>
+                                <!-- <hr style="margin: 10px 0;"> -->
+                                <strong>TECHNOLOGIES</strong>
+                                <hr style="margin: 10px 0;">
+                                <p class="p-projects">
+                                    HTML | CSS | node.js | react.js | AWS | MySQL
+                                </p>
+                            </div>
+                            <div class="button projects-button">
+                                <a href="#"><span>EXPAND</span></a>
+                            </div>
                         </div>
                         <div class="flex-project project-3">
-                            
+                            <h3>NO NAME PROJECT X</h3>
+                            <div>
+                                <!-- <hr style="margin: 10px 0;"> -->
+                                <strong>DESCRIPTION</strong>
+                                <hr style="margin: 10px 0;">
+                                <p class="p-projects">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati repellendus odit ad esse praesentium quos amet consectetur.
+                                </p>
+                            </div>
+                            <div>
+                                <!-- <hr style="margin: 10px 0;"> -->
+                                <strong>TECHNOLOGIES</strong>
+                                <hr style="margin: 10px 0;">
+                                <p class="p-projects">
+                                    HTML | CSS | node.js | react.js | AWS | MySQL
+                                </p>
+                            </div>
+                            <div class="button projects-button">
+                                <a href="#"><span>EXPAND</span></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
+            <div class="grey-bg cta-bg"></div>
+            <section class="cta">
+                <div class="cta-flex">
+                    <h4>SEEN ENOUGH?</h4>
+                    <div class="button cta-button">
+                        <a href="#"><span>GET IN TOUCH NOW</span></a>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <div class="footer-flex">
+                    <p>Made with &lt;3 by Simon Flohr.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/itsGizzo" target="_blank"><img src="./resources/images/icons/github.png"></a>
+                        <a href="https://www.linkedin.com/in/simonflohr/" target="_blank"><img src="./resources/images/icons/linkedin.png"></a>
+                    </div>
+                </div>
+            </footer>
         </main>
     </body>
+
+    <!-- JS Imports -->
+    <script src="./resources/js/app.js" type="text/javascript"></script>
+
 </html>

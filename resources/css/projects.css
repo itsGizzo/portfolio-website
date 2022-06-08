@@ -4,7 +4,7 @@
 
 .projects-grid {
     display: grid;
-    grid-template: 150px 100px repeat(4, 1fr) 100px / repeat(12, 1fr);
+    grid-template: 150px 100px repeat(4, 1fr) 150px / repeat(12, 1fr);
     width: 100%;
     max-width: 1366px;
     height: 100%;
@@ -20,21 +20,80 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    margin-top: 10px;
 }
 
 .flex-project {
     display: flex;
     flex-flow: column nowrap;
+    justify-content: space-between;
     background-color: darkgrey;
-    height: 400px;
+    height: 600px;
     width: 400px;
     margin: 20px;
-    border-width: 5px;
+    padding: 20px;
+    border: 3px solid #eba945;
+    /* border-width: 3px;
     border-style: solid;
-    border-image: linear-gradient(to top left,#eba945, #9d66ff) 1;
+    border-image: linear-gradient(0deg, #eba945, #9d66ff) 1; */
+    text-align: center;
 }
 
 .project-1 {
-    background-image: linear-gradient(#00000099, #00000099), url(/resources/images/simon-headshot.jpg);
+    /* background-image: linear-gradient(hsla(0, 0%, 0%, 0.867),hsla(0, 0%, 0%, 0.867)), url(/resources/images/aaliyah.jpg); */
+    background-color: hsla(0, 0%, 43%, 0.526);
     background-size: cover;
+}
+
+.project-2 {
+    background-image: linear-gradient(hsla(0, 0%, 0%, 0.767),hsla(0, 0%, 0%, 0.767)), url(/resources/images/simon-headshot.jpg);
+    background-size: cover;
+}
+
+.project-3 {
+    /* background-image: linear-gradient(hsla(0, 0%, 0%, 0.767),hsla(0, 0%, 0%, 0.767)), url(/resources/images/header-bg.jpg); */
+    background-color: hsla(0, 0%, 43%, 0.526);
+    background-size: cover;
+}
+
+/* Buttons */
+.projects-button {
+    width: 400;
+    margin: -20px;
+    position: relative;
+    background-color: #eba945;
+}
+
+.cta-button {
+    width: 500px;
+    background-color: #ff796b;
+}
+
+/* Typography */
+.p-projects {
+    line-height: 2rem;
+    margin-top: 1rem;
+    /* text-align: left; */
+}
+
+/* CTA Banner */
+.cta {
+    grid-area: 4 / 1 / span 1 / span 3;
+}
+
+.cta-flex {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100%;
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 20px 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Scrolling */
+#projects {
+    scroll-margin-top: 60px;
 }

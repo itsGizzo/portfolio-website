@@ -17,6 +17,8 @@
     src: url('/resources/fonts/mono-lisa/MonoLisa-Bold.otf');
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,300;8..144,400;8..144,700;8..144,800;8..144,900&display=swap');
+
 /* COLOR PALETTE
 
 NEUTRAL COLORS:
@@ -51,6 +53,7 @@ html {
     font-weight: 400;
     color: #ffffff;
     background-color: #090909;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -68,11 +71,28 @@ h2 {
     font-weight: normal;
     font-size: 28px;
     color: #ffffff;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+    color: hsla(0, 0%, 100%, 0.652);
+    padding: 10px;
+    height: 88px;
+}
+
+h4 {
+    font-weight: normal;
+    font-size: 28px;
+    color: #ffffff;
+    letter-spacing: 0.75rem;
+    margin: 0 88px 0 0;
 }
 
 p {
-    line-height: 50px;
+    line-height: 3rem;
 }
 
 p.indent {
@@ -80,7 +100,7 @@ p.indent {
 }
 
 hr {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 /* Grid Layout */
@@ -90,12 +110,19 @@ hr {
     top: 60px;
     width: 100%;
     grid-template-columns: 5% 1fr 5%;
-    grid-template-rows: 1000px 124px 1fr 200px;
+    grid-template-rows: 1000px 124px 1fr 124px 300px;
 }
 
-.technologies-bg {
-    grid-area: 2 / 1 / span 1 / span 3;
+.grey-bg {
     background-color: #1e1e1e;
+}
+
+.tech-bg {
+    grid-area: 2 / 1 / span 1 / span 3;
+}
+
+.cta-bg {
+    grid-area: 4 / 1 / span 1 / span 3;
 }
 
 /* Button */
@@ -116,11 +143,5 @@ hr {
 .button span {
     font-size: 20px;
     text-shadow: 2px 2px 16px rgba(0, 0, 0, 0.5);
-}
-
-.view-projects {
-    width: 100%;
-    position: relative;
-    background-color: #9d66ff;
-    margin-top: 20px;
+    text-shadow: 2px 2px 8px #00000050;
 }

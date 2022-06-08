@@ -1,0 +1,180 @@
+@import 'style.css';
+@import 'projects.css';
+@import 'header.css';
+@import 'footer.css';
+@import 'about-me.css';
+
+@media only screen and (max-width: 1504px) {
+    .technologies img {
+        width: 35px;
+        margin: 0 10px;
+    }
+
+    .technologies p {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .about-me {
+        background-size: 180%;
+    }
+}
+
+@media only screen and (max-width: 1111px) {
+    .technologies ul {
+        width: 100%;
+        max-width: 400px;
+        justify-content: center;
+    }
+
+    .technologies p {
+        margin-right: 30px;
+    }
+
+    .projects-grid {
+        grid-template: 100px 100px repeat(4, 1fr) 100px / repeat(12, 1fr);
+    }
+
+    h4 {
+        margin-right: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 770px) {
+
+    header ul {
+        display: none;
+    }
+
+    .dropdown-menu {
+        display: inline-block;
+    }
+
+    .projects-grid {
+        grid-template: 70px 70px repeat(4, 1fr) 70px / repeat(12, 1fr);
+    }
+
+    .technologies ul {
+        max-width: 400px;
+    }
+
+    .technologies p {
+        display: none;
+    }
+
+    .about-me-grid {
+        display: flex;
+        flex-flow: row wrap;
+        max-width: 500px;
+        /* max-height: 90%; */
+        /* height: 100%; */
+        justify-content: center;
+        align-content: flex-start;
+        margin: 50px auto;
+        /* border: 2px solid red; */
+    }
+
+    .about-me {
+        background-size: 250%;
+    }
+
+    .sidebar {
+        margin-bottom: 100px;
+    }
+
+    .grid-container {
+        grid-template-rows: 1200px 124px 1fr 124px 300px;
+    }
+
+    p {
+        font-size: 0.9rem;
+        line-height: 2.5rem;
+    }
+
+    .button span {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .sidebar {
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.05);
+        margin-bottom: 60px;
+    }
+
+    .social-links img {
+        width: 35px;
+        transition: opacity 150ms linear 0ms;
+    }
+
+}
+
+@media only screen and (max-width: 501px) {
+    .grid-container {
+        grid-template-rows: 1300px 124px 1fr 180px 300px;
+    }
+
+    .logo {
+        min-width: 0px;
+        max-width: 150px;
+    }
+
+    h1 {
+        font-size: 15px;
+    }
+
+    .about-me {
+        background-size: 400%;
+        grid-area: 1 / 1 / span 1 /span 3;
+        padding: 20px;
+    }
+
+    .cta-flex {
+        flex-flow: row wrap;
+    }
+
+    h4 {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 401px) {
+    .grid-container {
+        grid-template-rows: 1450px 140px 1fr 180px 300px;
+    }
+
+    .technologies img {
+        width: 20px;
+    }
+
+    .technologies ul {
+        max-width: 250px;
+        
+    }
+
+    .main-text-box p {
+        text-align: justify;
+    }
+
+    h4 {
+        font-size: 1.3rem;
+    }
+
+    .flex-project {
+        height: 700px;
+        margin: 20px 0;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .technologies img {
+        width: 25px;
+    }
+
+}
