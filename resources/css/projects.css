@@ -41,7 +41,7 @@
 
 .project-1 {
     /* background-image: linear-gradient(hsla(0, 0%, 0%, 0.867),hsla(0, 0%, 0%, 0.867)), url(/resources/images/aaliyah.jpg); */
-    background-image: linear-gradient(hsla(0, 0%, 0%, 0.3),hsla(0, 0%, 0%, 0.3)), url(/resources/images/header-bg.jpg);
+    background-image: linear-gradient(hsla(0, 0%, 0%, 0.3),hsla(0, 0%, 0%, 0.3)), url(../images/header-bg.jpg);
     background-size: 400%;
     backdrop-filter: grayscale(100%);
     background-position-x: -500px;
@@ -49,7 +49,7 @@
 }
 
 .project-2 {
-    background-image: linear-gradient(hsla(0, 0%, 0%, 0.767),hsla(0, 0%, 0%, 0.767)), url(/resources/images/simon-headshot.jpg);
+    background-image: linear-gradient(hsla(0, 0%, 0%, 0.767),hsla(0, 0%, 0%, 0.767)), url(../images/simon-headshot.jpg);
     background-size: cover;
 }
 

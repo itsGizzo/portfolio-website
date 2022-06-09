@@ -3,7 +3,7 @@
 /* Main Grid */
 .about-me {
     grid-area: 1 / 2 / span 1 /span 1;
-    background-image: url(/resources/images/header-bg.jpg);
+    background-image: url(../images/header-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
