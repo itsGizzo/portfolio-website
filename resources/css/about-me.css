@@ -151,8 +151,6 @@
     opacity: 50%;
     margin: 0 15px;
     position: relative;
-    /* image-cop: none; */
-    /* line-height: 40px; */
 }
 
 /* Buttons */
@@ -161,4 +159,10 @@
     position: relative;
     background-color: #9d66ff;
     margin-top: 20px;
+    transition: background-color 200ms ease-out; 
+}
+
+.view-projects:hover,
+.view-projects:active {
+    background-color: #7227f3;
 }

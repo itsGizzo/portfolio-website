@@ -41,8 +41,11 @@
 
 .project-1 {
     /* background-image: linear-gradient(hsla(0, 0%, 0%, 0.867),hsla(0, 0%, 0%, 0.867)), url(/resources/images/aaliyah.jpg); */
-    background-color: hsla(0, 0%, 43%, 0.526);
-    background-size: cover;
+    background-image: linear-gradient(hsla(0, 0%, 0%, 0.3),hsla(0, 0%, 0%, 0.3)), url(/resources/images/header-bg.jpg);
+    background-size: 400%;
+    backdrop-filter: grayscale(100%);
+    background-position-x: -500px;
+    background-position-y: -50px;
 }
 
 .project-2 {
@@ -62,11 +65,28 @@
     margin: -20px;
     position: relative;
     background-color: #eba945;
+    transition: background-color 150ms ease-out;
+}
+
+.projects-button:hover,
+.projects-button:active {
+    background-color: #ef9917;
 }
 
 .cta-button {
     width: 500px;
+    position: relative;
     background-color: #ff796b;
+    transition: background-color 200ms ease-out;
+}
+
+.cta-button:hover,
+.cta-button:active {
+    background-color: #e34736;
+}
+
+.project-border {
+    border-width: 5px;
 }
 
 /* Typography */

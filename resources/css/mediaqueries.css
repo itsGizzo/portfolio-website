@@ -113,6 +113,10 @@
         transition: opacity 150ms linear 0ms;
     }
 
+    .button span {
+        padding: 23px 0;
+    }
+
 }
 
 @media only screen and (max-width: 501px) {
