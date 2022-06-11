@@ -61,6 +61,10 @@ a {
     color: #ffffff;
 }
 
+.unselectable {
+    user-select: none;
+}
+
 /* Typography */
 h1 {
     font-weight: normal;
@@ -72,6 +76,14 @@ h2 {
     font-size: 28px;
     color: #ffffff;
     margin-bottom: 30px;
+}
+
+h2 span {
+    padding: 3px;
+    line-height: 45px;;
+    background-color: #ffffff;
+    color: #030303;
+    font-weight: bold;
 }
 
 h3 {
