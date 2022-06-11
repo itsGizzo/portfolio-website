@@ -98,3 +98,71 @@ emailBttn.addEventListener('click', function() {
         emailBttn.style.opacity = '0.5';
     }
 });
+
+/*-----------------------------------
+TEXT CURSOR
+-----------------------------------*/
+
+let textCursor = document.getElementById('text-cursor');
+let alternate = 1;
+
+setInterval(function() {
+    if (alternate === 1) {
+        textCursor.style.opacity = '0';
+        alternate = 0;
+    } else if (alternate === 0) {
+        textCursor.style.opacity = '1';
+        alternate = 1;
+    }
+}, 600);
+
+/*-----------------------------------
+TYPING ANIMATION
+-----------------------------------*/
+
+let greeting = document.getElementById('greeting');
+let mainTextBox = document.getElementById('main-text-box');
+let rest = document.getElementById('rest');
+let arr = ['H', 'i', ' ', 't', 'h', 'e', 'r', 'e', '!'];
+let tempHide = document.getElementById('temp-hide');
+let sideBar = document.getElementById('sidebar');
+let mediaQuery = 0;
+
+greeting.innerText = '';
+mainTextBox.style.minHeight = '200px';
+tempHide.style.opacity = '0';
+sideBar.style.maxHeight = '0';
+sideBar.style.padding = '0';
+sideBar.style.opacity = '0';
+
+
+let i = 0;
+
+setTimeout(function() {
+    if (greeting.innerText != 'Hi there!') {
+        let typing = setInterval(function() {
+            if (i < arr.length) {
+                greeting.innerText += arr[i];
+                i++;
+            } else {
+                clearInterval(typing);
+            }
+        }, 100);
+    }
+}, 400);
+
+setTimeout(function() {
+    rest.style.transition = 'opacity 400ms ease-in-out'
+    rest.style.opacity = '1';
+}, 1300);
+
+setTimeout(function() {
+    mainTextBox.style.transition = 'min-height 600ms ease-in-out';
+    mainTextBox.style.minHeight = '520px';
+    tempHide.style.transition = 'opacity 400ms ease-in-out';
+    tempHide.style.opacity = '1';
+    sideBar.style.transition = 'opacity 400ms linear 800ms, padding 10ms linear 800ms, max-height 600ms ease-in-out 800ms';
+    sideBar.style.maxHeight = '500px';
+    sideBar.style.padding = '20px';
+    sideBar.style.opacity = '1';
+}, 1800);

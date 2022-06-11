@@ -52,7 +52,7 @@
         <main class="grid-container">
             <section class="about-me">
                 <div class="about-me-grid">
-                    <div class="sidebar">
+                    <div class="sidebar" id="sidebar">
                         <article>
                             <img src="./resources/images/simon-headshot.jpg" id="headshot" onContextMenu="return false;" draggable="false">
                             <p><strong>SIMON FLOHR</strong><br>
@@ -69,20 +69,22 @@
                             </div>
                         </article>
                     </div>
-                    <div class="main-text-box">
+                    <div class="main-text-box" id="main-text-box">
                         <article>
-                            <h2><span class="unselectable">Hi there!</span><br>I'm a full-stack web developer.</h2>
-                            <hr>
-                            <p class="indent"><!--Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati repellendus odit ad esse praesentium quos excepturi expedita molestiae voluptates quas veritatis, facere beatae facilis atque voluptate accusantium odio deleniti possimus autem est repellat, dolores officiis. Dolorem, dolore doloremque. Quod earum officia maiores sapiente perferendis temporibus quis reiciendis vel porro minima?-->Thanks for visiting my portfolio website! My name is Simon and I'm a full-stack web developer specializing in HTML/CSS, React.js, Node.js, MySQL, and C# ASP.NET.</p>
-                            <p class="indent">I'm currently a B.S. Software Development student at WGU and expect to finish my program in April 2023. Tap the button below to view my projects now!</p>
-                            <div class="button view-projects">
-                                <div class="bttn-borders bttn-border-top"></div>
-                                <div class="bttn-borders bttn-border-bottom"></div>
-                                <div class="bttn-borders bttn-border-left"></div>
-                                <div class="bttn-borders bttn-border-right"></div>
-                                <div class="bttn-overlay"></div>
-                                <a href="#projects"><span>VIEW PROJECTS</span></a>
-                            </div>
+                            <h2 id="h2-caption"><span class="unselectable"><span id="greeting">Hi there!</span><span class="text-cursor" id="text-cursor"></span></span><br><span id="rest">I'm a full-stack web developer.</span></h2>
+                            <span id="temp-hide">
+                                <hr id="title-hr">
+                                <p class="indent"><!--Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati repellendus odit ad esse praesentium quos excepturi expedita molestiae voluptates quas veritatis, facere beatae facilis atque voluptate accusantium odio deleniti possimus autem est repellat, dolores officiis. Dolorem, dolore doloremque. Quod earum officia maiores sapiente perferendis temporibus quis reiciendis vel porro minima?-->Thanks for visiting my portfolio website! My name is Simon and I'm a full-stack web developer specializing in HTML/CSS, React.js, Node.js, MySQL, and C# ASP.NET.</p>
+                                <p class="indent">I'm currently a B.S. Software Development student at WGU and expect to finish my program in April 2023. Tap the button below to view my projects now!</p>
+                                <div class="button view-projects">
+                                    <div class="bttn-borders bttn-border-top"></div>
+                                    <div class="bttn-borders bttn-border-bottom"></div>
+                                    <div class="bttn-borders bttn-border-left"></div>
+                                    <div class="bttn-borders bttn-border-right"></div>
+                                    <div class="bttn-overlay"></div>
+                                    <a href="#projects"><span>VIEW PROJECTS</span></a>
+                                </div>
+                            </span>
                         </article>
                     </div>
                 </div>

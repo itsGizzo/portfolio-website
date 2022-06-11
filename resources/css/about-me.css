@@ -53,12 +53,20 @@
 .main-text-box {
     grid-area: 2 / 6 / span 4 / span 9;
     display: flex;
+    position: relative;
+    overflow: visible;
     align-self: center;
     justify-self: center;
     max-width: 777px;
-    min-height: 500px;
+    min-height: 520px;
+    height: 100px;
+    z-index: 0;
     /* border: 2px solid red; */
     /* min-width: 570px; */
+}
+
+#temp-hide {
+    opacity: 1;
 }
 
 .main-text-box article {
@@ -68,6 +76,12 @@
 }
 
 /* Sidebar */
+#sidebar {
+    max-height: 100%;
+    /* padding: 20px; */
+    overflow: hidden;
+}
+
 .social-links {
     display: flex;
     flex-flow: row nowrap;
@@ -118,7 +132,28 @@
     /* transition: opacity 400ms linear 0ms; */
 }
 
+/* Typing Animation */
+
+.text-cursor {
+    display: inline-block;
+    position: relative;
+    top: 3px; 
+    width: 21px;
+    height: 2.2rem;
+    background-color: #030303;
+    opacity: 1;
+}
+
+#rest {
+    opacity: 0;
+    /* transition: opacity 400ms ease-in-out; */
+}
+
 /* Technologies Content */
+.tech-bg {
+    z-index: 0;
+}
+
 .technologies-flex {
     display: flex;
     height: 100%;
@@ -127,6 +162,7 @@
     margin: 0 auto;
     justify-content: center;
     align-items: center;
+    z-index: 0;
 }
 
 .technologies p {

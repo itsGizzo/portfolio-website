@@ -80,6 +80,10 @@
         background-size: 250%;
     }
 
+    #h2-caption {
+        font-size: 1.9rem;
+    }
+
     .sidebar {
         margin-bottom: 100px;
     }
@@ -98,8 +102,13 @@
     }
 
     h2 {
-        font-size: 1.5rem;
+        /* font-size: 1.5rem; */
         text-align: center;
+    }
+
+    .text-cursor {
+        height: 1.95rem;
+        width: 19px;
     }
 
     .sidebar {
